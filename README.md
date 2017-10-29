@@ -42,7 +42,7 @@ Please read [CONTRIBUTING.md](https://github.com/mutatedRanger/WireMate/blob/mas
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository]().
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/mutatedRanger/WireMate/tags).
 
 ## Authors
 * **Hubert Zajączkowski** - *Initial work* - [mutatedRanger](https://github.com/mutatedRanger)
