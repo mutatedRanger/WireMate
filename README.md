@@ -45,7 +45,7 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 ## Authors
 * **Hubert Zajączkowski** - *Initial work* - [mutatedRanger](https://github.com/mutatedRanger)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/mutatedRanger/WireMate/graphs/contributors) who participated in this project.
 
 ## License
 
