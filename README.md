@@ -1,6 +1,6 @@
 # WireMate
 
-The repository contains the WireMate application 
+The repository contains the WireMate application supporting in complex EE computations.
 
 ## Getting started
 
