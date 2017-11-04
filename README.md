@@ -19,7 +19,7 @@ Clone or download this repository
 ```
 git clone https://github.com/mutatedRanger/WireMate
 ```
-
+<!---
 Install the Cocoapods on your machine
 ```
 sudo gem install cocoapods
@@ -34,6 +34,7 @@ Navigate to the directory where WireMate project is stored and execute
 ```
 pod install
 ```
+--->
 
 ## Built with
 
