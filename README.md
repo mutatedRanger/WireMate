@@ -38,6 +38,7 @@ pod install
 ## Built with
 
 * [Alamofire](https://github.com/Alamofire/Alamofire) - Elegant networking in Swift
+* [SwifyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - SwiftyJSON makes it easy to deal with JSON data in Swift.
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/mutatedRanger/WireMate/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
