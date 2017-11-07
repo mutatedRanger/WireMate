@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13CB54F9C10F1B0773944E65 /* Pods_WireMateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDBEEE4ABE41CBC7841B661 /* Pods_WireMateUITests.framework */; };
+		4A0DB497ABDC8EE22B91DFA9 /* Pods_WireMateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0260E271F391AE695EF632C /* Pods_WireMateTests.framework */; };
+		7AA6A04DF372D70A410F9919 /* Pods_WireMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C55D49E09DAD3D584D0B55 /* Pods_WireMate.framework */; };
+		B41E767D1F42DD03008274C1 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E767C1F42DD03008274C1 /* CustomSearchBar.swift */; };
+		B4449DE81F41B6C70032BFC0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4449DE71F41B6C70032BFC0 /* TabBarViewController.swift */; };
+		B4449DEA1F41F0790032BFC0 /* ExtendedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4449DE91F41F0790032BFC0 /* ExtendedNavBarView.swift */; };
+		B4449DEC1F41F0FA0032BFC0 /* ToolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4449DEB1F41F0FA0032BFC0 /* ToolsTableViewController.swift */; };
+		B46277241F345DAF00795D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46277231F345DAF00795D03 /* AppDelegate.swift */; };
+		B46277291F345DAF00795D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46277271F345DAF00795D03 /* Main.storyboard */; };
+		B462772C1F345DAF00795D03 /* WireMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B462772A1F345DAF00795D03 /* WireMate.xcdatamodeld */; };
+		B462772E1F345DAF00795D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B462772D1F345DAF00795D03 /* Assets.xcassets */; };
+		B46277311F345DAF00795D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B462772F1F345DAF00795D03 /* LaunchScreen.storyboard */; };
+		B462773C1F345DAF00795D03 /* WireMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462773B1F345DAF00795D03 /* WireMateTests.swift */; };
+		B46277471F345DAF00795D03 /* WireMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46277461F345DAF00795D03 /* WireMateUITests.swift */; };
+		B46D5ED01F38C4E5009F2D29 /* FadeInOutTransitionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D5ECF1F38C4E5009F2D29 /* FadeInOutTransitionHelper.swift */; };
+		B4AE2A1E1F3917E0002A7FED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE2A1D1F3917E0002A7FED /* SignUpViewController.swift */; };
+		B4B2F2801F448CAD00A08572 /* TableToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2F27F1F448CAD00A08572 /* TableToolKitViewController.swift */; };
+		B4BFB5A31F39FC6F00190791 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFB5A21F39FC6F00190791 /* WelcomeViewController.swift */; };
+		B4E764681F34619900FE5596 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E764671F34619900FE5596 /* SplashScreenVC.swift */; };
+		B4E7646A1F346A7C00FE5596 /* PulsingAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E764691F346A7C00FE5596 /* PulsingAnimationHelper.swift */; };
+		B4E799541F3B383B006BE12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4E799531F3B383B006BE12C /* GoogleService-Info.plist */; };
+		B4F830621F38FB10004E6CAB /* SparkWalkthroughManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F830611F38FB10004E6CAB /* SparkWalkthroughManager.swift */; };
+		B4F830641F38FBB3004E6CAB /* SparkWalkthroughContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F830631F38FBB3004E6CAB /* SparkWalkthroughContent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B46277381F345DAF00795D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B46277181F345DAF00795D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B462771F1F345DAF00795D03;
+			remoteInfo = WireMate;
+		};
+		B46277431F345DAF00795D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B46277181F345DAF00795D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B462771F1F345DAF00795D03;
+			remoteInfo = WireMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DDBEEE4ABE41CBC7841B661 /* Pods_WireMateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireMateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		340AEA893396B066BC0D4CD7 /* Pods-WireMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WireMate/Pods-WireMate.debug.xcconfig"; sourceTree = "<group>"; };
+		447F3C9336E79FC28EFA9B0D /* Pods-WireMateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WireMateUITests/Pods-WireMateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76E66CC19AFA294432A355C8 /* Pods-WireMateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WireMateTests/Pods-WireMateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B41E767C1F42DD03008274C1 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		B4449DE71F41B6C70032BFC0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B4449DE91F41F0790032BFC0 /* ExtendedNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedNavBarView.swift; sourceTree = "<group>"; };
+		B4449DEB1F41F0FA0032BFC0 /* ToolsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsTableViewController.swift; sourceTree = "<group>"; };
+		B46277201F345DAF00795D03 /* WireMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46277231F345DAF00795D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B46277281F345DAF00795D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B462772B1F345DAF00795D03 /* WireMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WireMate.xcdatamodel; sourceTree = "<group>"; };
+		B462772D1F345DAF00795D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B46277301F345DAF00795D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B46277321F345DAF00795D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46277371F345DAF00795D03 /* WireMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B462773B1F345DAF00795D03 /* WireMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireMateTests.swift; sourceTree = "<group>"; };
+		B462773D1F345DAF00795D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46277421F345DAF00795D03 /* WireMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46277461F345DAF00795D03 /* WireMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireMateUITests.swift; sourceTree = "<group>"; };
+		B46277481F345DAF00795D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46D5ECF1F38C4E5009F2D29 /* FadeInOutTransitionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOutTransitionHelper.swift; sourceTree = "<group>"; };
+		B4AE2A1D1F3917E0002A7FED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B4B2F27F1F448CAD00A08572 /* TableToolKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableToolKitViewController.swift; sourceTree = "<group>"; };
+		B4BFB5A21F39FC6F00190791 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B4E764671F34619900FE5596 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		B4E764691F346A7C00FE5596 /* PulsingAnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsingAnimationHelper.swift; sourceTree = "<group>"; };
+		B4E799531F3B383B006BE12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4E799551F3B3DA9006BE12C /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		B4F830611F38FB10004E6CAB /* SparkWalkthroughManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkWalkthroughManager.swift; sourceTree = "<group>"; };
+		B4F830631F38FBB3004E6CAB /* SparkWalkthroughContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkWalkthroughContent.swift; sourceTree = "<group>"; };
+		C0260E271F391AE695EF632C /* Pods_WireMateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireMateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17048E206910A941DB55DD0 /* Pods-WireMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-WireMate/Pods-WireMate.release.xcconfig"; sourceTree = "<group>"; };
+		E3C55D49E09DAD3D584D0B55 /* Pods_WireMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8050077FA7C4F1639422FF8 /* Pods-WireMateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WireMateUITests/Pods-WireMateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDDF4FEFF4CF05C88FE837C4 /* Pods-WireMateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WireMateTests/Pods-WireMateTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B462771D1F345DAF00795D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA6A04DF372D70A410F9919 /* Pods_WireMate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46277341F345DAF00795D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0DB497ABDC8EE22B91DFA9 /* Pods_WireMateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B462773F1F345DAF00795D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CB54F9C10F1B0773944E65 /* Pods_WireMateUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B46277171F345DAF00795D03 = {
+			isa = PBXGroup;
+			children = (
+				B46277221F345DAF00795D03 /* WireMate */,
+				B462773A1F345DAF00795D03 /* WireMateTests */,
+				B46277451F345DAF00795D03 /* WireMateUITests */,
+				B46277211F345DAF00795D03 /* Products */,
+				E63054E2C15C4D8DFBE2F540 /* Pods */,
+				E50C17C42D4E54230353CAC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B46277211F345DAF00795D03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B46277201F345DAF00795D03 /* WireMate.app */,
+				B46277371F345DAF00795D03 /* WireMateTests.xctest */,
+				B46277421F345DAF00795D03 /* WireMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B46277221F345DAF00795D03 /* WireMate */ = {
+			isa = PBXGroup;
+			children = (
+				B46277541F345DF800795D03 /* SupportingFiles */,
+				B46277271F345DAF00795D03 /* Main.storyboard */,
+				B4B2F27F1F448CAD00A08572 /* TableToolKitViewController.swift */,
+				B4E799531F3B383B006BE12C /* GoogleService-Info.plist */,
+				B4449DE91F41F0790032BFC0 /* ExtendedNavBarView.swift */,
+				B41E767C1F42DD03008274C1 /* CustomSearchBar.swift */,
+				B4E764671F34619900FE5596 /* SplashScreenVC.swift */,
+				B4AE2A1D1F3917E0002A7FED /* SignUpViewController.swift */,
+				B4BFB5A21F39FC6F00190791 /* WelcomeViewController.swift */,
+				B4449DE71F41B6C70032BFC0 /* TabBarViewController.swift */,
+				B4449DEB1F41F0FA0032BFC0 /* ToolsTableViewController.swift */,
+				B4AE2A1C1F3916C4002A7FED /* Spark */,
+				B46D5ED11F38C4EE009F2D29 /* CustomTransitions */,
+				B46D5ECE1F38C4BC009F2D29 /* CustomAnimations */,
+				B462772A1F345DAF00795D03 /* WireMate.xcdatamodeld */,
+			);
+			path = WireMate;
+			sourceTree = "<group>";
+		};
+		B462773A1F345DAF00795D03 /* WireMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B462773B1F345DAF00795D03 /* WireMateTests.swift */,
+				B462773D1F345DAF00795D03 /* Info.plist */,
+			);
+			path = WireMateTests;
+			sourceTree = "<group>";
+		};
+		B46277451F345DAF00795D03 /* WireMateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B46277461F345DAF00795D03 /* WireMateUITests.swift */,
+				B46277481F345DAF00795D03 /* Info.plist */,
+			);
+			path = WireMateUITests;
+			sourceTree = "<group>";
+		};
+		B46277541F345DF800795D03 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B46277231F345DAF00795D03 /* AppDelegate.swift */,
+				B4E799551F3B3DA9006BE12C /* BridgingHeader.h */,
+				B462772D1F345DAF00795D03 /* Assets.xcassets */,
+				B462772F1F345DAF00795D03 /* LaunchScreen.storyboard */,
+				B46277321F345DAF00795D03 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B46D5ECE1F38C4BC009F2D29 /* CustomAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				B4E764691F346A7C00FE5596 /* PulsingAnimationHelper.swift */,
+			);
+			name = CustomAnimations;
+			sourceTree = "<group>";
+		};
+		B46D5ED11F38C4EE009F2D29 /* CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				B46D5ECF1F38C4E5009F2D29 /* FadeInOutTransitionHelper.swift */,
+			);
+			name = CustomTransitions;
+			sourceTree = "<group>";
+		};
+		B4AE2A1C1F3916C4002A7FED /* Spark */ = {
+			isa = PBXGroup;
+			children = (
+				B4F830611F38FB10004E6CAB /* SparkWalkthroughManager.swift */,
+				B4F830631F38FBB3004E6CAB /* SparkWalkthroughContent.swift */,
+			);
+			name = Spark;
+			sourceTree = "<group>";
+		};
+		E50C17C42D4E54230353CAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3C55D49E09DAD3D584D0B55 /* Pods_WireMate.framework */,
+				C0260E271F391AE695EF632C /* Pods_WireMateTests.framework */,
+				0DDBEEE4ABE41CBC7841B661 /* Pods_WireMateUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63054E2C15C4D8DFBE2F540 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				340AEA893396B066BC0D4CD7 /* Pods-WireMate.debug.xcconfig */,
+				C17048E206910A941DB55DD0 /* Pods-WireMate.release.xcconfig */,
+				76E66CC19AFA294432A355C8 /* Pods-WireMateTests.debug.xcconfig */,
+				FDDF4FEFF4CF05C88FE837C4 /* Pods-WireMateTests.release.xcconfig */,
+				447F3C9336E79FC28EFA9B0D /* Pods-WireMateUITests.debug.xcconfig */,
+				E8050077FA7C4F1639422FF8 /* Pods-WireMateUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B462771F1F345DAF00795D03 /* WireMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B462774B1F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMate" */;
+			buildPhases = (
+				9D122A6FCD1BFC9ED88D1354 /* [CP] Check Pods Manifest.lock */,
+				B462771C1F345DAF00795D03 /* Sources */,
+				B462771D1F345DAF00795D03 /* Frameworks */,
+				B462771E1F345DAF00795D03 /* Resources */,
+				670820C766B9357C36757F9E /* [CP] Embed Pods Frameworks */,
+				4C2C33A9283CB804C65D7A2F /* [CP] Copy Pods Resources */,
+				B4E764661F34610200FE5596 /* Increment Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WireMate;
+			productName = WireMate;
+			productReference = B46277201F345DAF00795D03 /* WireMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B46277361F345DAF00795D03 /* WireMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B462774E1F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMateTests" */;
+			buildPhases = (
+				D8BC132BF440C8CF37FDC5F5 /* [CP] Check Pods Manifest.lock */,
+				B46277331F345DAF00795D03 /* Sources */,
+				B46277341F345DAF00795D03 /* Frameworks */,
+				B46277351F345DAF00795D03 /* Resources */,
+				B0A62D420AEB4AAE61101A2F /* [CP] Embed Pods Frameworks */,
+				46900AE13AB22355037787F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B46277391F345DAF00795D03 /* PBXTargetDependency */,
+			);
+			name = WireMateTests;
+			productName = WireMateTests;
+			productReference = B46277371F345DAF00795D03 /* WireMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B46277411F345DAF00795D03 /* WireMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46277511F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMateUITests" */;
+			buildPhases = (
+				8550A6F0A98DA42FBCC5DE49 /* [CP] Check Pods Manifest.lock */,
+				B462773E1F345DAF00795D03 /* Sources */,
+				B462773F1F345DAF00795D03 /* Frameworks */,
+				B46277401F345DAF00795D03 /* Resources */,
+				80AB08BC114D13AFF234BDCE /* [CP] Embed Pods Frameworks */,
+				38110FEE4493253A5D2C1796 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B46277441F345DAF00795D03 /* PBXTargetDependency */,
+			);
+			name = WireMateUITests;
+			productName = WireMateUITests;
+			productReference = B46277421F345DAF00795D03 /* WireMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B46277181F345DAF00795D03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Sidereum;
+				TargetAttributes = {
+					B462771F1F345DAF00795D03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PCMTB7CGFN;
+						ProvisioningStyle = Automatic;
+					};
+					B46277361F345DAF00795D03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 447TN8F9H2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B462771F1F345DAF00795D03;
+					};
+					B46277411F345DAF00795D03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 447TN8F9H2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B462771F1F345DAF00795D03;
+					};
+				};
+			};
+			buildConfigurationList = B462771B1F345DAF00795D03 /* Build configuration list for PBXProject "WireMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B46277171F345DAF00795D03;
+			productRefGroup = B46277211F345DAF00795D03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B462771F1F345DAF00795D03 /* WireMate */,
+				B46277361F345DAF00795D03 /* WireMateTests */,
+				B46277411F345DAF00795D03 /* WireMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B462771E1F345DAF00795D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46277311F345DAF00795D03 /* LaunchScreen.storyboard in Resources */,
+				B4E799541F3B383B006BE12C /* GoogleService-Info.plist in Resources */,
+				B462772E1F345DAF00795D03 /* Assets.xcassets in Resources */,
+				B46277291F345DAF00795D03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46277351F345DAF00795D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46277401F345DAF00795D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38110FEE4493253A5D2C1796 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMateUITests/Pods-WireMateUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46900AE13AB22355037787F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMateTests/Pods-WireMateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C2C33A9283CB804C65D7A2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WireMate/Pods-WireMate-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMate/Pods-WireMate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670820C766B9357C36757F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WireMate/Pods-WireMate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZCAnimatedLabel/ZCAnimatedLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZCAnimatedLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMate/Pods-WireMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80AB08BC114D13AFF234BDCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMateUITests/Pods-WireMateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8550A6F0A98DA42FBCC5DE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireMateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D122A6FCD1BFC9ED88D1354 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A62D420AEB4AAE61101A2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WireMateTests/Pods-WireMateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E764661F34610200FE5596 /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		D8BC132BF440C8CF37FDC5F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireMateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B462771C1F345DAF00795D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BFB5A31F39FC6F00190791 /* WelcomeViewController.swift in Sources */,
+				B41E767D1F42DD03008274C1 /* CustomSearchBar.swift in Sources */,
+				B4449DEC1F41F0FA0032BFC0 /* ToolsTableViewController.swift in Sources */,
+				B4F830621F38FB10004E6CAB /* SparkWalkthroughManager.swift in Sources */,
+				B4E764681F34619900FE5596 /* SplashScreenVC.swift in Sources */,
+				B4AE2A1E1F3917E0002A7FED /* SignUpViewController.swift in Sources */,
+				B4F830641F38FBB3004E6CAB /* SparkWalkthroughContent.swift in Sources */,
+				B4E7646A1F346A7C00FE5596 /* PulsingAnimationHelper.swift in Sources */,
+				B4B2F2801F448CAD00A08572 /* TableToolKitViewController.swift in Sources */,
+				B462772C1F345DAF00795D03 /* WireMate.xcdatamodeld in Sources */,
+				B46D5ED01F38C4E5009F2D29 /* FadeInOutTransitionHelper.swift in Sources */,
+				B4449DEA1F41F0790032BFC0 /* ExtendedNavBarView.swift in Sources */,
+				B4449DE81F41B6C70032BFC0 /* TabBarViewController.swift in Sources */,
+				B46277241F345DAF00795D03 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46277331F345DAF00795D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B462773C1F345DAF00795D03 /* WireMateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B462773E1F345DAF00795D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46277471F345DAF00795D03 /* WireMateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B46277391F345DAF00795D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B462771F1F345DAF00795D03 /* WireMate */;
+			targetProxy = B46277381F345DAF00795D03 /* PBXContainerItemProxy */;
+		};
+		B46277441F345DAF00795D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B462771F1F345DAF00795D03 /* WireMate */;
+			targetProxy = B46277431F345DAF00795D03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B46277271F345DAF00795D03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B46277281F345DAF00795D03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B462772F1F345DAF00795D03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B46277301F345DAF00795D03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B46277491F345DAF00795D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B462774A1F345DAF00795D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B462774C1F345DAF00795D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340AEA893396B066BC0D4CD7 /* Pods-WireMate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCMTB7CGFN;
+				INFOPLIST_FILE = WireMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/hubert/Documents/XcodeProjects/WireMate/WireMate/WireMate/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B462774D1F345DAF00795D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17048E206910A941DB55DD0 /* Pods-WireMate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCMTB7CGFN;
+				INFOPLIST_FILE = WireMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/hubert/Documents/XcodeProjects/WireMate/WireMate/WireMate/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B462774F1F345DAF00795D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E66CC19AFA294432A355C8 /* Pods-WireMateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 447TN8F9H2;
+				INFOPLIST_FILE = WireMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WireMate.app/WireMate";
+			};
+			name = Debug;
+		};
+		B46277501F345DAF00795D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF4FEFF4CF05C88FE837C4 /* Pods-WireMateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 447TN8F9H2;
+				INFOPLIST_FILE = WireMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WireMate.app/WireMate";
+			};
+			name = Release;
+		};
+		B46277521F345DAF00795D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447F3C9336E79FC28EFA9B0D /* Pods-WireMateUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 447TN8F9H2;
+				INFOPLIST_FILE = WireMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WireMate;
+			};
+			name = Debug;
+		};
+		B46277531F345DAF00795D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8050077FA7C4F1639422FF8 /* Pods-WireMateUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 447TN8F9H2;
+				INFOPLIST_FILE = WireMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidereum.WireMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WireMate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B462771B1F345DAF00795D03 /* Build configuration list for PBXProject "WireMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46277491F345DAF00795D03 /* Debug */,
+				B462774A1F345DAF00795D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B462774B1F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B462774C1F345DAF00795D03 /* Debug */,
+				B462774D1F345DAF00795D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B462774E1F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B462774F1F345DAF00795D03 /* Debug */,
+				B46277501F345DAF00795D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46277511F345DAF00795D03 /* Build configuration list for PBXNativeTarget "WireMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46277521F345DAF00795D03 /* Debug */,
+				B46277531F345DAF00795D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B462772A1F345DAF00795D03 /* WireMate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B462772B1F345DAF00795D03 /* WireMate.xcdatamodel */,
+			);
+			currentVersion = B462772B1F345DAF00795D03 /* WireMate.xcdatamodel */;
+			path = WireMate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B46277181F345DAF00795D03 /* Project object */;
+}
