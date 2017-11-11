@@ -68,9 +68,9 @@ class SplashScreenViewController: UIViewController {
     
     @IBAction func tappedNextButton(_ sender: UIButton) {
         pulsing.removeFromSuperlayer()
-        //let walkthrough = self.storyboard?.instantiateViewController(withIdentifier: "WalkthroughVC") as! SparkWalkthroughManager
+        let walkthrough = self.storyboard?.instantiateViewController(withIdentifier: "SparkWVC") as! SparkWalkthroughManager
         
-        //self.navigationController?.pushViewController(walkthrough, animated: true)
+        self.navigationController?.pushViewController(walkthrough, animated: true)
     }
     /*
     // MARK: - Navigation

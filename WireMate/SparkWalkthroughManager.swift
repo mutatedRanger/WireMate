@@ -2,8 +2,8 @@
 //  SparkWalkthroughManager.swift
 //  WireMate
 //
-//  Created by Hubert on 07.08.2017.
-//  Copyright © 2017 Sidereum. All rights reserved.
+//  Created by Hubert  on 11.11.2017.
+//  Copyright © 2017 Hubert Zajączkowski. All rights reserved.
 //
 
 import UIKit
@@ -11,33 +11,22 @@ import UIKit
 @IBDesignable
 class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate{
     
+    @IBOutlet weak var controlSection: UIView!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var notReadyButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
+    
     @IBInspectable var currentPageIndicatorTintColor: UIColor = UIColor.init(red: 64/255, green: 131/255, blue: 255/255, alpha: 1.0)
     @IBInspectable var pageIndicatorTintColor: UIColor = UIColor.init(red: 215/255, green: 215/255, blue: 215/255, alpha: 1.0)
-
+    
     var pageVC: UIPageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     var pageControl: UIPageControl = UIPageControl()
     
     var pagesNumber: Int = 0
+    
     var genericDataType: Dictionary<String, Array<String>> = Dictionary()
     
-    @IBOutlet weak var controlSection: UIView!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var logInButton: UIButton!
-    
     override func viewDidLoad() {
-        genericDataType = [
-            "titleArray": [
-            "Choose from endless list",
-            "Accelerate significantly",
-            "Be remembered"
-            ],
-            "detailArray": [
-            "Wire Mate comes with a collection of powerful mini-tools.",
-            "Commander fundamentally changes the way of interaction. Switch to keyboard, type-in and voilà.",
-            "With Wire Mate, you always have an access to every setting, whenever you're using it."
-            ]
-        ]
-        
         self.pagesNumber = 3
         
         self.pageVC.dataSource = self
@@ -73,32 +62,29 @@ class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource,
                            multiplier: 0.1,
                            constant: 0).isActive = true
         
-        let pageControlCenterHor = NSLayoutConstraint(item: self.pageControl,
-                                                  attribute: .centerX,
-                                                  relatedBy: .equal,
-                                                  toItem: self.pageVC.view,
-                                                  attribute: .centerX,
-                                                  multiplier: 1.0,
-                                                  constant: 0)
-        layoutConstraints.append(pageControlCenterHor)
+        NSLayoutConstraint(item: self.pageControl,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: self.pageVC.view,
+                           attribute: .centerX,
+                           multiplier: 1.0,
+                           constant: 0).isActive = true
         
-        let pageControlHeight = NSLayoutConstraint(item: self.pageControl,
-                                               attribute: .height,
-                                               relatedBy: .equal,
-                                               toItem: nil,
-                                               attribute: .notAnAttribute,
-                                               multiplier: 1.0,
-                                               constant: 10)
-        layoutConstraints.append(pageControlHeight)
+        NSLayoutConstraint(item: self.pageControl,
+                           attribute: .height,
+                           relatedBy: .equal,
+                           toItem: nil,
+                           attribute: .notAnAttribute,
+                           multiplier: 1.0,
+                           constant: 10).isActive = true
         
-        let pageControlAdjVertical = NSLayoutConstraint(item: self.pageControl,
-                                                       attribute: .bottom,
-                                                       relatedBy: .equal,
-                                                       toItem: self.pageVC.view,
-                                                       attribute: .bottom,
-                                                       multiplier: 1.0,
-                                                       constant: 0)
-        layoutConstraints.append(pageControlAdjVertical)
+        NSLayoutConstraint(item: self.pageControl,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: self.pageVC.view,
+                           attribute: .bottom,
+                           multiplier: 1.0,
+                           constant: 0).isActive = true
         
         NSLayoutConstraint.activate(layoutConstraints)
         
@@ -110,18 +96,15 @@ class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource,
         self.setPageControl()
         self.setButton(sender: signUpButton)
         self.setButton(sender: logInButton)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        self.notReadyButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
     //MARK: - UIPageViewControllerDataSource
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        let pageContentVC = viewController as! SparkWalkthroughContent
+        let currentContentVC = viewController as! SparkWalkthroughContent
         
-        var index = pageContentVC.pageIndex
+        var index = currentContentVC.pageIndex
         self.pageControl.currentPage = index
         
         if index == 0 || index == NSNotFound {
@@ -134,9 +117,9 @@ class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource,
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        let pageContentVC = viewController as! SparkWalkthroughContent
+        let currentContentVC = viewController as! SparkWalkthroughContent
         
-        var index = pageContentVC.pageIndex
+        var index = currentContentVC.pageIndex
         self.pageControl.currentPage = index
         
         if index == NSNotFound {
@@ -164,16 +147,16 @@ class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource,
             return nil
         }
         
-        let pageContentVC = self.storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentVC") as! SparkWalkthroughContent
-        pageContentVC.pageIndex = index
+        let currentContentVC = self.storyboard?.instantiateViewController(withIdentifier: "SparkWCVC") as! SparkWalkthroughContent
+        currentContentVC.pageIndex = index
         
         let titleArray = genericDataType["titleArray"]
         let detailArray = genericDataType["detailArray"]
         
-        pageContentVC.titleText = titleArray?[index]
-        pageContentVC.detailText = detailArray?[index]
+        currentContentVC.titleText = titleArray?[index]
+        currentContentVC.detailText = detailArray?[index]
         
-        return pageContentVC
+        return currentContentVC
     }
     
     func setPageControl() {
@@ -195,16 +178,5 @@ class SparkWalkthroughManager: UIViewController, UIPageViewControllerDataSource,
         } else if sender.tag == 2 {
             sender.layer.borderColor = UIColor.init(red: 64/255, green: 131/255, blue: 255/255, alpha: 1.0).cgColor
         }
-    }
-    
-    @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        let signUp = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
-        
-        self.navigationController?.pushViewController(signUp, animated: true)
-    }
-    
-    @IBAction func notReadyButtonTapped(_ sender: UIButton) {
-        let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as! WelcomeViewController
-        self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
 }
