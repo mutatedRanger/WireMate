@@ -1,3 +1,5 @@
+<img src="Group3x.png" align="middle" />
+
 # WireMate
 
 The repository contains the WireMate application supporting in complex EE computations.
