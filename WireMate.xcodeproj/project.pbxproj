@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5BC00D1A4E1C41B10A23C47B /* Pods_WireMateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2383A1FDF6997F02608CBE6F /* Pods_WireMateUITests.framework */; };
+		B40274701FB6E2F900F392CC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B402746F1FB6E2F900F392CC /* SplashScreenViewController.swift */; };
+		B40274721FB6E41F00F392CC /* PulsingAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40274711FB6E41F00F392CC /* PulsingAnimationHelper.swift */; };
+		B40274741FB6E4E200F392CC /* SparkTransitionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40274731FB6E4E200F392CC /* SparkTransitionHelper.swift */; };
 		B4636FD21FA6456700AAC5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4636FD11FA6456700AAC5AA /* AppDelegate.swift */; };
-		B4636FD41FA6456700AAC5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4636FD31FA6456700AAC5AA /* ViewController.swift */; };
 		B4636FD71FA6456700AAC5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4636FD51FA6456700AAC5AA /* Main.storyboard */; };
 		B4636FD91FA6456700AAC5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4636FD81FA6456700AAC5AA /* Assets.xcassets */; };
 		B4636FDC1FA6456700AAC5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4636FDA1FA6456700AAC5AA /* LaunchScreen.storyboard */; };
@@ -45,9 +47,11 @@
 		7619DF005AC5FB005A426E98 /* Pods-WireMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-WireMate/Pods-WireMate.release.xcconfig"; sourceTree = "<group>"; };
 		80BAD9B06E55606A684A5D16 /* Pods-WireMateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireMateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WireMateUITests/Pods-WireMateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A6D03BEECBD21555C1EC50D7 /* Pods_WireMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B402746F1FB6E2F900F392CC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		B40274711FB6E41F00F392CC /* PulsingAnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimationHelper.swift; sourceTree = "<group>"; };
+		B40274731FB6E4E200F392CC /* SparkTransitionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkTransitionHelper.swift; sourceTree = "<group>"; };
 		B4636FCE1FA6456700AAC5AA /* WireMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4636FD11FA6456700AAC5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4636FD31FA6456700AAC5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4636FD61FA6456700AAC5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4636FD81FA6456700AAC5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4636FDB1FA6456700AAC5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +116,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B402746E1FB60AFC00F392CC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B4636FD11FA6456700AAC5AA /* AppDelegate.swift */,
+				B4636FD81FA6456700AAC5AA /* Assets.xcassets */,
+				B4636FDA1FA6456700AAC5AA /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		B4636FC51FA6456700AAC5AA = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +151,11 @@
 		B4636FD01FA6456700AAC5AA /* WireMate */ = {
 			isa = PBXGroup;
 			children = (
-				B4636FD11FA6456700AAC5AA /* AppDelegate.swift */,
-				B4636FD31FA6456700AAC5AA /* ViewController.swift */,
+				B402746E1FB60AFC00F392CC /* SupportingFiles */,
 				B4636FD51FA6456700AAC5AA /* Main.storyboard */,
-				B4636FD81FA6456700AAC5AA /* Assets.xcassets */,
-				B4636FDA1FA6456700AAC5AA /* LaunchScreen.storyboard */,
+				B402746F1FB6E2F900F392CC /* SplashScreenViewController.swift */,
+				B40274731FB6E4E200F392CC /* SparkTransitionHelper.swift */,
+				B40274711FB6E41F00F392CC /* PulsingAnimationHelper.swift */,
 				B4636FDD1FA6456700AAC5AA /* Info.plist */,
 			);
 			path = WireMate;
@@ -458,8 +472,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4636FD41FA6456700AAC5AA /* ViewController.swift in Sources */,
 				B4636FD21FA6456700AAC5AA /* AppDelegate.swift in Sources */,
+				B40274701FB6E2F900F392CC /* SplashScreenViewController.swift in Sources */,
+				B40274741FB6E4E200F392CC /* SparkTransitionHelper.swift in Sources */,
+				B40274721FB6E41F00F392CC /* PulsingAnimationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
