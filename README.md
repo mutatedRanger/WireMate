@@ -1,4 +1,4 @@
-<img src="Group.png" align="middle" />
+![WireMate:](https://github.com/mutatedRanger/WireMate/blob/master/Group.png)
 
 # WireMate
 
