@@ -1,4 +1,4 @@
-<img src="Group3x.png" align="middle" />
+<img src="Group.png" align="middle" />
 
 # WireMate
 
